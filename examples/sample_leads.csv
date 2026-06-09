@@ -1,0 +1,6 @@
+name,url,opportunity_score,email,phone,issues,socials
+Smith Family Plumbing,http://smithfamilyplumbing.example,75,info@smithfamilyplumbing.example,(940) 555-0142,No HTTPS / insecure site; Not mobile-friendly (no viewport tag); Stale content (copyright 2+ years old),https://facebook.com/smithfamilyplumbing
+Corner Cafe,https://cornercafe.example,55,hello@cornercafe.example,(214) 555-0188,Built on a free site-builder tier; Stale content (copyright 2+ years old); No meta description (poor SEO),https://instagram.com/cornercafe
+Lakeside Landscaping,http://lakesidelandscaping.example,45,,(469) 555-0110,No HTTPS / insecure site; No contact form or mailto link,
+Bright Smile Dental,https://brightsmiledental.example,15,frontdesk@brightsmiledental.example,(940) 555-0173,No meta description (poor SEO),https://facebook.com/brightsmiledental
+Riverbend Auto Repair,https://riverbendauto.example,0,service@riverbendauto.example,(214) 555-0155,,https://facebook.com/riverbendauto
