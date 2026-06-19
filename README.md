@@ -120,6 +120,14 @@ tests/            # offline tests against fixture HTML (6 tests)
 - **No API keys.** Search and scraping are keyless; the outreach templates work
   offline. (An LLM can be dropped into `outreach.py` for more variety.)
 
+## Public Proof Context
+
+Built by Kobey Dev Services as a practical lead-generation and outreach proof.
+
+- Portfolio: https://kobeydev.com
+- GitHub org: https://github.com/git-agent-swarm
+- Google Developer profile: https://me.developers.google.com/u/116492041557080639666
+
 ## License
 
 MIT © Kobey Broussard
