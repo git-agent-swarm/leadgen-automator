@@ -6,6 +6,8 @@ Run with: ``pytest``
 
 from __future__ import annotations
 
+from urllib.parse import urlparse
+
 from leadgen.models import Lead
 from leadgen.outreach import draft_email
 from leadgen.scrape import Page, extract_emails, extract_phones, extract_socials
@@ -52,8 +54,8 @@ def test_extract_phones_accepts_common_formats():
 def test_extract_socials():
     html = '<a href="https://instagram.com/shop">ig</a> <a href="https://x.com/shop">x</a>'
     socials = extract_socials(html)
-    assert any("instagram.com" in s for s in socials)
-    assert any("x.com" in s for s in socials)
+    assert any(urlparse(s).netloc == "instagram.com" for s in socials)
+    assert any(urlparse(s).netloc == "x.com" for s in socials)
 
 
 def test_good_site_scores_low():
