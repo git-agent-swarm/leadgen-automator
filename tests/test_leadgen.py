@@ -54,9 +54,8 @@ def test_extract_phones_accepts_common_formats():
 def test_extract_socials():
     html = '<a href="https://instagram.com/shop">ig</a> <a href="https://x.com/shop">x</a>'
     socials = extract_socials(html)
-    hosts = {urlparse(s).netloc for s in socials}
-    assert "instagram.com" in hosts
-    assert "x.com" in hosts
+    assert any(urlparse(s).netloc == "instagram.com" for s in socials)
+    assert any(urlparse(s).netloc == "x.com" for s in socials)
 
 
 def test_good_site_scores_low():
